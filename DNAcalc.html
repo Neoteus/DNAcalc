@@ -1,0 +1,33 @@
+<head>
+    <meta charset="UTF-8">
+    <title>DNA计算器</title>
+    <link rel="stylesheet" type="text/css" href="DNAcalc.css">
+    <script charset="UTF-8" type="application/javascript" src="clipboard.min.js"></script>
+    <script charset="UTF-8" type="application/javascript" src="DNAcalc.js"></script>
+</head>
+
+<body>
+    <h1>DNA计算器</h1>
+    <h2>DNA互补序列</h2>
+    <table>
+        <tr>
+            <th>序列: </th>
+            <th><input type="text" id="sequence-input"></th>
+        </tr>
+        <tr>
+            <th>长度: </th>
+            <th><input type="text" id="length-output"></th>
+            <th><button onclick="calLength()">计算</button></th>
+            <th><button class="btn" data-clipboard-target="#length-output">复制</button></th>
+        </tr>
+        <tr>
+            <th>互补序列: </th>
+            <th><input type="text" id="complementary-sequence-output"></th>
+            <th><button onclick="calComplementarySequence()">计算</button></th>
+            <th><button class="btn" data-clipboard-target="#complementary-sequence-output">复制</button></th>
+        </tr>
+    </table>
+    <script charset="UTF-8" type="application/javascript">
+        new ClipboardJS('.btn');
+    </script>
+</body>
