@@ -11,20 +11,24 @@
     <h2>DNA互补序列</h2>
     <table>
         <tr>
-            <th>序列: </th>
+            <th class="header-col">序列: </th>
             <th><input type="text" id="sequence-input"></th>
+            <th><button onclick="calALL()">计算</button></th>
         </tr>
         <tr>
-            <th>长度: </th>
-            <th><input type="text" id="length-output"></th>
-            <th><button onclick="calLength()">计算</button></th>
-            <th><button class="btn" data-clipboard-target="#length-output">复制</button></th>
+            <th class="header-col">长度: </th>
+            <th><input type="text" id="length-result"></th>
+            <th><button class="btn" data-clipboard-target="#length-result">复制</button></th>
         </tr>
         <tr>
-            <th>互补序列: </th>
-            <th><input type="text" id="complementary-sequence-output"></th>
-            <th><button onclick="calComplementarySequence()">计算</button></th>
-            <th><button class="btn" data-clipboard-target="#complementary-sequence-output">复制</button></th>
+            <th class="header-col">分子质量: </th>
+            <th><input type="text" id="molecular-weight-result"></th>
+            <th><button class="btn" data-clipboard-target="#molecular-weight-result">复制</button></th>
+        </tr>
+        <tr>
+            <th class="header-col">互补序列: </th>
+            <th><input type="text" id="complementary-sequence-result"></th>
+            <th><button class="btn" data-clipboard-target="#complementary-sequence-result">复制</button></th>
         </tr>
     </table>
     <script charset="UTF-8" type="application/javascript">
